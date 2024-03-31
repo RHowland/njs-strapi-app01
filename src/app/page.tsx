@@ -1,7 +1,12 @@
-export default function Home() {
+import Brand from "@/components/ui/Brand";
+import { NextPage } from "next";
+
+
+const Home : NextPage = () => {
   return (
     <div>
-      <h1>This is simple-site home page</h1>
+      <Brand />
     </div>
   );
 }
+export default Home;
