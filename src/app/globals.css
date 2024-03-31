@@ -13,7 +13,16 @@ body {
 }
 
 @layer utilities {
-  .nav-link {
-      @apply inline px-2 lg:px-5 text-center text-primary-900 font-normal hover:text-primary-500;
+  .foot-link {
+    @apply inline text-center text-primary-900 font-semibold hover:text-primary-500;
   }
+
+  .nav-link {
+      @apply inline text-center text-primary-900 font-normal hover:text-primary-500;
+  }
+
+  .social-link {
+    @apply inline text-center text-primary-900 hover:text-primary-500 text-xl;
+  }
+  
 }
