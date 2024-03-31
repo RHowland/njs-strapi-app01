@@ -3,14 +3,11 @@
 import React,{ FC }  from "react";
 import Brand, { IBrandProps } from "@/components/ui/Brand";
 import Link from "next/link";
-
+import { ILink } from '@/types/index';
 // Section 1
-interface INavLink {
-  name: string;
-  url: string;
-}
 
-const navLinks: INavLink[] = [
+
+const navLinks: Pick<ILink, 'name' | 'url'>[] = [
   {
     name: "About Us",
     url: "#",
@@ -29,17 +26,17 @@ interface IHeaderProps{
   brand: IBrandProps;
 }
 
-const Header: FC< Partial<IHeaderProps>> = ({brand}) => {
+const Header: FC<Partial<IHeaderProps>> = ({brand}) => {
   return (
     <header className="bg-white py-2 sticky top-0 z-50">
       <div className="container flex gap-5 items-center">
         <Brand {...brand}/>
 
 {/* Section 2 */}
-        <ul className="hidden sm:flex">
+        <ul className="hidden sm:flex gap-5">
           {navLinks.map((v,i)=>(
-            <Link key={i} href={v.url}>
-              <li className="nav-link">{v.name}</li>
+            <Link className="nav-link" key={i} href={v.url}>
+              <li>{v.name}</li>
           </Link>
           ))}
         </ul>
@@ -56,7 +53,7 @@ export default Header;
  * ---------------------------------------------------------------------
  * File Name      : Header.tsx
  * Component Name : Header
- * Component Type : ui
+ * Component Type : layout
  * Date Created   : 2024-03-31
  * Dev Initials   : Elias Emon
  * ------------------------------
