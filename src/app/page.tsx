@@ -1,11 +1,12 @@
-import Brand from "@/components/ui/Brand";
+
 import { NextPage } from "next";
+
 
 
 const Home : NextPage = () => {
   return (
     <div>
-      <Brand />
+      <h1>This is simple site</h1>
     </div>
   );
 }
