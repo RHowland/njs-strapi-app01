@@ -2,27 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  overflow-x: hidden;
-}
-
-@layer components{
-  .container {
-    @apply max-w-6xl mx-auto p-3;
-  }
-}
-
-@layer utilities {
-  .foot-link {
-    @apply inline text-center text-primary-900 font-semibold hover:text-primary-500;
-  }
-
-  .nav-link {
-      @apply inline text-center text-primary-900 font-normal hover:text-primary-500;
-  }
-
-  .social-link {
-    @apply inline text-center text-primary-900 hover:text-primary-500 text-xl;
-  }
-  
-}
