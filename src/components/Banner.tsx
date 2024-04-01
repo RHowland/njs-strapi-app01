@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { FC } from "react";
 
 
-interface IBannerProps {
+export interface IBannerProps {
   bnr_heading: string;
   bnr_paragraph: string;
   bnr_image: {
