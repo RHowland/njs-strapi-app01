@@ -83,3 +83,33 @@ export default Banner;
  * Answer  : NO.
  *
  */
+
+/**
+* =====================================================================
+*   COMPONENT  REVISION
+* =====================================================================
+* Date Revised : 2024-03-01          (last date you made a code change)
+* Dev Initials : Elias Emon
+* ------------------------------
+* Question: Why was it necessary to revise this component?
+* Answer  : The revision was necessary to add functionality or make improvements to the Banner component.
+*
+* ------------------------------
+* Describe Your Change(s): 
+* - None
+* 
+* ------------------------------
+* Section Comments:    (Enter "none" if you have no comments)
+* none
+* ------------------------------
+* Input Comments:      (Enter "none" if you have no comments)
+* none
+* ------------------------------
+* Output Comments:     (Enter "none" if you have no comments)
+* None
+* ------------------------------
+* Additional Comments:
+* Question: Did you have to write any unusual code? 
+* Answer  : NO
+*
+*/

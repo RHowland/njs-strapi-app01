@@ -59,4 +59,35 @@ export default Brand;
  * Question: Did you have to write any unusual code?
  * Answer  : NO.
  *
+ * 
  */
+/**
+* =====================================================================
+*   COMPONENT  REVISION
+* =====================================================================
+* Date Revised : 2024-03-01          (last date you made a code change)
+* Dev Initials : Elias Emon
+* ------------------------------
+* Question: Why was it necessary to revise this component?
+* Answer  : The revision was necessary to improve accessibility by providing a more descriptive alt text for the brand logo image.
+*
+* ------------------------------
+* Describe Your Change(s): 
+* - Implemented dynamic updating of the alt tag for the image in the Brand component, allowing developers to pass alternative text as a prop and enhance
+* accessibility for users with screen readers.
+* 
+* ------------------------------
+* Section Comments:    (Enter "none" if you have no comments)
+* none
+* ------------------------------
+* Input Comments:      (Enter "none" if you have no comments)
+* none
+* ------------------------------
+* Output Comments:     (Enter "none" if you have no comments)
+* None
+* ------------------------------
+* Additional Comments:
+* Question: Did you have to write any unusual code? 
+* Answer  : NO
+*
+*/
