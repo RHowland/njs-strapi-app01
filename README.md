@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quick Start Guide
 
-## Getting Started
+## Steps before cloning this repository
 
-First, run the development server:
+Before following these steps make sure you have Node version **_>=18.0.0 <=20.11.1_** and NPM version **_>=9.0.0 <=10.5.0_** installed in your local machine.
 
-```bash
+## Steps to clone this repository
+
+1. Make sure you are logged in your organization git account. To login your git account please follow these commands
+
+    ```sh
+      git config --global user.name 'YOUR_USER_NAME'
+      git config --global user.email 'YOUR_EMAIL'
+    ```
+
+2. Clone the repo
+3. After the clone go to the project root directory.
+4. Open the terminal and type this command to install all required dependencies for our applications
+
+    ```sh
+    npm run workspace:setup
+    ```
+
+5. After installation type this command in the terminal to run our project in development mode
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Commit guidelines
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+When you write a commit message please make sure your commit message looks like below:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
+<type>[scope]: <subject>
 
-## Learn More
+[body]  (Optional)
 
-To learn more about Next.js, take a look at the following resources:
+[footer]  (Optional)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Please make sure at least you put type, scope, subject and body. Otherwise you cannot commit to the repository. It will through an error. Please be noted, you need to one line gap between two lines. And make sure there is no space between `type` and `scope` i.e. `feat(user)`, not `feat (user)`.
 
-## Deploy on Vercel
+**_ref:_** [conventional Commit Message ✅](https://www.conventionalcommits.org/en/v1.0.0/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+feat(user): add login functionality
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This commit adds the ability for users to log in to the application.  (Optional)
+
+This commit also fixes a bug with the registration form. (Optional)
+
+Fixes #123 (Optional)
+```
+
+The type is mandatory and determines the intent of the change. Here are possible values:
+
+-   build: changes affecting build systems or external dependencies
+-   ci: updating configuration files for continuous integration and deployment services
+-   chore: updating grunt tasks etc.; no production code change
+-   docs: documentation-only changes
+-   feat: a new feature
+-   fix: a bug fix
+-   perf: a code change that improves performance
+-   refactor: a code change that neither fixes a bug nor adds a feature
+-   style: changes that do not affect the meaning of the code (white-space, formatting, missing semicolons, etc.)
+-   test: adding missing tests or correcting existing tests
