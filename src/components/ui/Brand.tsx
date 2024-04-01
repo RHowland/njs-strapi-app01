@@ -10,12 +10,12 @@ export interface IBrandProps {
 }
 
 //Section 2
-const Brand: FC<Partial<IBrandProps>> = ({ src }) => {
+const Brand: FC<Partial<IBrandProps>> = ({ src , alt }) => {
   return (
     <div>
       <Image
         src= {src ? src : "/Logo.png"}
-        alt="brand logo"
+        alt= {alt ? alt: "brand logo"}
         width={100}
         height={80}
       />
